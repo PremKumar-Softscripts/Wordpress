@@ -20,3 +20,11 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
           server-dir: /htdocs/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/.htaccess**
+            **/node_modules/**
+            **/vendor/**
+            **/wp-content/uploads/**
